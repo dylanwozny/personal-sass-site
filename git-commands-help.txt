@@ -10,6 +10,6 @@ git push
 git branch 'name' <--- create a new branch
 
 2.
-git checkout 'name'<----- switches to specified branch
+git checkout -b 'name'<----- switches to specified branch
 
 3.
