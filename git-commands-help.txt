@@ -13,3 +13,4 @@ git branch 'name' <--- create a new branch
 git checkout -b 'name'<----- switches to specified branch
 
 3.
+git branch <---- tells you what brach your on
