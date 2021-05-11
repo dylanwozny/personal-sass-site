@@ -1,0 +1,38 @@
+// -----------LAYOUT-------------
+
+@use 'colors';
+
+@mixin container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem;
+  border-radius: 5px;
+}
+
+section {
+  @include container;
+
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.18rem;
+  }
+}
+
+// & use the parent selector for a compound selector
+// section .section-skills -->to--> section.section-skills
+// HANDY FOR HOVERS
+// &.section-skills {
+//   background-color: $gray;
+// }
+
+aside {
+  @include container;
+  h2 {
+    font-size: 2rem;
+    color: colors.$dk-shade;
+  }
+}

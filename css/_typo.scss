@@ -1,0 +1,48 @@
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ************fluid Typography**** **********/
+p,
+.capital-letters {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  letter-spacing: 1px;
+}
+
+/* The h1 font-size on a smaller screen is 25px. Then we can adjust it on larger screens to 40px when more room allows for a larger size */
+h1 {
+  /* same idea as as the calculation below ! */
+  /* but dont need media query now ! */
+  font-size: clamp(2.369rem, 7vw, 6.375rem);
+}
+
+/* the h2 heading will be 20px and grow at a rate of 0.02 (this rate can be adjusted) until it reaches 31px, then we will stop the growth */
+/* font-size: calc(min font size in rem + rate of growth * (100vw - 320px)); */
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.157rem);
+}
+
+h3 {
+  font-size: clamp(1.32rem, 3vw, 2rem);
+  color: white;
+}
+
+/* max font-size */
+/* look at inpsector tools when h2 font-size hits 900px and then make that the font-size in the break point here ! */
+/* @media (min-width: 900px) {
+  h2 {
+    font-size: 1.953rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+} */
+
+/* you can use this on P but follows these rules... */
+/* for p DONT NOT GO LOWER THAN 16PX try not to go larger*/
+/* try not to go larger than 20px */

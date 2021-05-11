@@ -1,0 +1,257 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix > * {
+  float: left;
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ************fluid Typography**** **********/
+p,
+.capital-letters {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  letter-spacing: 1px;
+}
+
+/* The h1 font-size on a smaller screen is 25px. Then we can adjust it on larger screens to 40px when more room allows for a larger size */
+h1 {
+  /* same idea as as the calculation below ! */
+  /* but dont need media query now ! */
+  font-size: clamp(2.369rem, 7vw, 6.375rem);
+}
+
+/* the h2 heading will be 20px and grow at a rate of 0.02 (this rate can be adjusted) until it reaches 31px, then we will stop the growth */
+/* font-size: calc(min font size in rem + rate of growth * (100vw - 320px)); */
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.157rem);
+}
+
+h3 {
+  font-size: clamp(1.32rem, 3vw, 2rem);
+  color: white;
+}
+
+/* max font-size */
+/* look at inpsector tools when h2 font-size hits 900px and then make that the font-size in the break point here ! */
+/* @media (min-width: 900px) {
+  h2 {
+    font-size: 1.953rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+} */
+/* you can use this on P but follows these rules... */
+/* for p DONT NOT GO LOWER THAN 16PX try not to go larger*/
+/* try not to go larger than 20px */
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem;
+  border-radius: 5px;
+}
+section h2 {
+  font-size: 2rem;
+}
+section p {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.18rem;
+}
+
+aside {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem;
+  border-radius: 5px;
+}
+aside h2 {
+  font-size: 2rem;
+  color: #272f3a;
+}
+
+.btn-a {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+  background-color: #272f3a;
+  color: #f3f4f4;
+  display: inline-block;
+}
+.btn-a:hover {
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn-b {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+  background-color: #9eacb6;
+  color: #272f3a;
+  display: inline-block;
+}
+.btn-b:hover {
+  font-weight: bold;
+  color: #fff;
+  background-color: #9eacb6;
+  color: #f3f4f4;
+}
+
+/*--------------- header ---------------*/
+.logo {
+  margin-right: auto;
+}
+
+header {
+  background-color: #272f3a;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem;
+  border-radius: 5px;
+  color: #f3f4f4;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9eacb6;
+  padding: 0rem 0.5rem;
+  overflow: hidden;
+}
+nav a {
+  color: #f3f4f4;
+  padding: 1rem;
+}
+nav a:hover {
+  background-color: #ba854c;
+}
+nav ul {
+  width: 70%;
+  max-width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,43 @@
+/*--------------- header ---------------*/
+
+// vars and mixins need to be imported at top whenever they
+//used in a file
+@use 'colors';
+@use 'layout';
+
+.logo {
+  margin-right: auto;
+}
+
+header {
+  background-color: colors.$dk-shade;
+  text-align: center;
+  @include layout.container;
+  color: colors.$lgt-shade;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  // height: 70px;
+  background: colors.$lgt-accent-gray;
+  padding: 0rem 0.5rem;
+  overflow: hidden;
+  // height: 70px;
+
+  a {
+    color: colors.$lgt-shade;
+    padding: 1rem;
+    &:hover {
+      background-color: colors.$main-brown;
+    }
+  }
+
+  ul {
+    width: 70%;
+    // min-width: 30rem;
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

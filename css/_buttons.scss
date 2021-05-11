@@ -1,0 +1,33 @@
+@use 'colors';
+
+// mixin parameters
+@mixin button($bg-color, $text-color) {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 4px;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+  background-color: $bg-color;
+  color: $text-color;
+  display: inline-block;
+}
+
+.btn-a {
+  @include button(colors.$dk-shade, colors.$lgt-shade);
+  // NEED THIS FOR HOVER !
+  &:hover {
+    font-weight: bold;
+    color: #fff;
+  }
+}
+.btn-b {
+  @include button(colors.$lgt-accent-gray, colors.$dk-shade);
+  // NEED THIS FOR HOVER !
+  &:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: colors.$lgt-accent-gray;
+    color: colors.$lgt-shade;
+  }
+}
