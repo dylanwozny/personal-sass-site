@@ -1,0 +1,14 @@
+You can download a sass template from my github 
+stage->commit
+
+git status
+git commit -m <---- commit all staged files (or use vs codes gui)
+
+-----NEW BRANCH------
+1.
+git branch 'name' <--- create a new branch
+
+2.
+git checkout 'name'<----- switches to specified branch
+
+3.
