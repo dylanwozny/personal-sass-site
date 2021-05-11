@@ -3,6 +3,7 @@ stage->commit
 
 git status
 git commit -m <---- commit all staged files (or use vs codes gui)
+git push
 
 -----NEW BRANCH------
 1.
