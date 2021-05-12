@@ -1,0 +1,90 @@
+You can download a sass template from my github 
+stage->commit
+
+git status
+git commit -m <---- commit all staged files (or use vs codes gui)
+git push
+git add .
+
+--------------------NEW BRANCH----------------
+1.
+git branch 'name' <--- create a new branch
+
+2.
+git checkout -b 'name'<----- switches to specified branch
+
+3.
+git branch <---- tells you what brach your on
+
+---------------------UPDATE BRANCHES-----------------
+
+1.
+make sure you modify existing files instead of flatout replacing !
+
+1.a
+once you've updated a branch: 
+git add . <----staged
+
+2.
+commit all changes
+git commit -m 'message'
+
+
+------------------Merging Branches-------------------------
+
+Basic merging here, can be more complicated.
+usually want to merge into main branch
+
+1.
+make sure both branches are clean
+
+2.
+git checkout to branch you want the changes on (usually main)
+
+3. 
+git merge 'name' <---- name of branch with changes (not main)
+
+4.
+
+
+----------Merging branches with different content (just updating main with new brach content, no overwrite)--------
+not fast forward merge
+
+merges two together and then makes a commit with both inside
+1.
+commit all changes
+
+git commit -a -m "message"
+
+2. go to main
+merge the branch with main
+
+git merge 'name' 
+
+3. review any conflicts and then clean branch
+
+
+--------Managing branches---------
+
+1. findout which branches have been merged before
+git branch --merged
+git branch --no--merge
+
+2. delete a branch
+git branch -d 'name'
+
+3. branches not merged, git will tell you cant do it
+to do it:
+git branch -D bugfix
+
+----------Pushing to remote depots (online)----------
+refer to pdfs for setting up a complete repo
+
+
+1. push the main branch 
+'git push'
+
+2. push a brach thats not main
+git push -u origin 'name'
+
+
