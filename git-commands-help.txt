@@ -6,7 +6,7 @@ git commit -m <---- commit all staged files (or use vs codes gui)
 git push
 git add .
 
------NEW BRANCH------
+--------------------NEW BRANCH----------------
 1.
 git branch 'name' <--- create a new branch
 
@@ -16,11 +16,36 @@ git checkout -b 'name'<----- switches to specified branch
 3.
 git branch <---- tells you what brach your on
 
------UPDATE BRANCHES------
+---------------------UPDATE BRANCHES-----------------
 
 1.
 make sure you modify existing files instead of flatout replacing !
 
 1.a
+once you've updated a branch: 
+git add . <----staged
+
+2.
+commit all changes
+git commit -m 'message'
+
+
+------------------Merging Branches-------------------------
+
+Basic merging here, can be more complicated.
+usually want to merge into main branch
+
+1.
+make sure both branches are clean
+
+2.
+git checkout to branch you want the changes on (usually main)
+
+3. 
+git merge 'name' <---- name of branch with changes (not main)
+
+4.
+
+
 
 
