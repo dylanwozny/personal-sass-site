@@ -47,6 +47,23 @@ git merge 'name' <---- name of branch with changes (not main)
 4.
 
 
+----------Merging branches with different content (just updating main with new brach content, no overwrite)--------
+not fast forward merge
+
+merges two together and then makes a commit with both inside
+1.
+commit all changes
+
+git commit -a -m "message"
+
+2. go to main
+merge the branch with main
+
+git merge 'name' 
+
+3. review any conflicts and then clean branch
 
 
-git branch <---- tells you what brach your on
+------Resolving Conflicts-----------
+
+1.
