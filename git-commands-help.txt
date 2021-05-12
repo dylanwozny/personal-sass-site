@@ -78,4 +78,13 @@ to do it:
 git branch -D bugfix
 
 ----------Pushing to remote depots (online)----------
+refer to pdfs for setting up a complete repo
+
+
+1. push the main branch 
+'git push'
+
+2. push a brach thats not main
+git push -u origin 'name'
+
 
