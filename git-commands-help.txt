@@ -4,6 +4,7 @@ stage->commit
 git status
 git commit -m <---- commit all staged files (or use vs codes gui)
 git push
+git add .
 
 -----NEW BRANCH------
 1.
@@ -16,3 +17,10 @@ git checkout -b 'name'<----- switches to specified branch
 git branch <---- tells you what brach your on
 
 -----UPDATE BRANCHES------
+
+1.
+make sure you modify existing files instead of flatout replacing !
+
+1.a
+
+
