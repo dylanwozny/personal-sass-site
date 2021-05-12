@@ -49,3 +49,4 @@ git merge 'name' <---- name of branch with changes (not main)
 
 
 
+git branch <---- tells you what brach your on
