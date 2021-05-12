@@ -76,3 +76,6 @@ git branch -d 'name'
 3. branches not merged, git will tell you cant do it
 to do it:
 git branch -D bugfix
+
+----------Pushing to remote depots (online)----------
+
