@@ -64,6 +64,15 @@ git merge 'name'
 3. review any conflicts and then clean branch
 
 
-------Resolving Conflicts-----------
+--------Managing branches---------
 
-1.
+1. findout which branches have been merged before
+git branch --merged
+git branch --no--merge
+
+2. delete a branch
+git branch -d 'name'
+
+3. branches not merged, git will tell you cant do it
+to do it:
+git branch -D bugfix
