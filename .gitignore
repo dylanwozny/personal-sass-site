@@ -1,0 +1,23 @@
+# exclude the ,htaccess file
+.htaccess
+
+# ignore any psd/ai files
+*.psd
+*.ai
+
+# ignore osx folder attributes
+.DS_store
+
+# ignore specific themes
+wp-content/themes/twenty*/
+
+# Exclude node modules
+node_modules/
+
+#ignore text files
+*.txt
+#except read me and notes
+!README.txt
+!git-commands-help.txt
+
+
