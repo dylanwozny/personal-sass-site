@@ -91,3 +91,6 @@ git push -u origin 'name'
 -------- using the desktop app ------
 
 ---creating branches----
+ you can keep branches private on machines by not publishing them, or alternatively you can upload them to the repo online by publishing them !
+
+ Double check what your current branch is !
