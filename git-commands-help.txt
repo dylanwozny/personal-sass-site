@@ -102,3 +102,8 @@ this on github under the environments
 
 ---Merge branches in github desktop--
 
+you can compare differences on the desktop app or on github site !
+
+--resolving conflicts--
+sometimes you need to manually go into the files and delete inside the file...
+
