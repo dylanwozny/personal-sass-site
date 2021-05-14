@@ -88,3 +88,5 @@ refer to pdfs for setting up a complete repo
 git push -u origin 'name'
 
 
+-------- using the desktop app ------
+
