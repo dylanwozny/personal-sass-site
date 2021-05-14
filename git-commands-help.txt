@@ -94,3 +94,11 @@ git push -u origin 'name'
  you can keep branches private on machines by not publishing them, or alternatively you can upload them to the repo online by publishing them !
 
  Double check what your current branch is !
+
+gh-pages
+- create a repo called this and push to github.
+- this will create a live link to the site, you can see
+this on github under the environments 
+
+---Merge branches in github desktop--
+
