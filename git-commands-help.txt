@@ -113,3 +113,9 @@ manually and manually commit the changes !
 
 
 ----Collaborating with github-----
+
+1. copying a public github is called a fork
+2. they must ask you for permission to submit a commit
+
+1. Adding collaborators, read and write access:
+2. settings > manage access > add collaborators
