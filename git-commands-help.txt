@@ -103,3 +103,13 @@ this on github under the environments
 ---Merge branches in github desktop--
 
 ----Rolling back commits-----
+
+1. Revert Commit:
+
+- this merges the two commits.
+- you will have to choose the changes
+manually and manually commit the changes !
+- you can still grab the pre revert files from history !
+
+
+----Collaborating with github-----
