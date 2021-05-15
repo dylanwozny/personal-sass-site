@@ -119,3 +119,11 @@ manually and manually commit the changes !
 
 1. Adding collaborators, read and write access:
 2. settings > manage access > add collaborators
+
+got to commits, look at history of files
+
+LINE COMMENTS good for commit review
+ 
+--- Issues ----
+
+
