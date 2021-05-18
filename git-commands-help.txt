@@ -126,4 +126,42 @@ LINE COMMENTS good for commit review
  
 --- Issues ----
 
+good way to communicate with others
+
+MILESTONE
+- set project milestones are hit, tracked with issues
+- once issues are solved then the milestone is hit
+
+LABELS
+- default
+- you can make own with color !
+
+
+MAKING ISSUES 
+- you cant delete issues... you can |CLOSE it....
+
+---BEING A COLLABORATOR----
+
+FORKING
+copy's to your repo and you work on it separately and then make a pull request when you want to do changes
+
+Alternative 
+
+Collaborator clones main to own local repo and makes a branch and creates a pull request to update the main
+
+Collaborator does not work on master branch
+
+Owner makes a branch that collaborator can work on...
+
+--PULL REQUEST----
+
+A request to MERGE the collaborators branch with the main
+
+Have one person manage pull requests and merges, they can approve or deny pull requests
+
+creating pull request add comments 
+
+---Manage pull requests---
+
+check top title for quick summary
 
