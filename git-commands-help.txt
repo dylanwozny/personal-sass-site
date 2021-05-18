@@ -102,27 +102,3 @@ this on github under the environments
 
 ---Merge branches in github desktop--
 
-you can compare differences on the desktop app or on github site !
-
---resolving conflicts--
-sometimes you need to manually go into the files and delete inside the file...
-
--- binary or blob files=-----
-
-pdfs, adobe photo shop, illustrator
-
-- github doesn't track inside contents of these fil
-
-1. pull in blob binary from other branch
-
-git checkout --theirs --'path'
-
-2. add file
-
-git add 'path'
-
-
-3. git commit update files
-
-git commit -a -m "comments"
-
