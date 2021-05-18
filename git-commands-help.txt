@@ -163,5 +163,5 @@ creating pull request add comments
 
 ---Manage pull requests---
 
-check top title for quick summary
+
 
